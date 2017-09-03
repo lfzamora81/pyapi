@@ -12,7 +12,7 @@ services:
       - 8000:8000
     environment:
       - MONGODB_HOST=mongo
-      - API_KEY=MjEzODEw
+      - API_KEY=
   mongo:
     image: "zfllj/mymongo:0.0.1"
     networks:
