@@ -1,0 +1,19 @@
+version: "2.1"
+networks:
+  pythian:
+    driver: bridge
+  
+services:
+  api:
+    image: "zfllj/smplrst:0.0.3"
+    networks:
+      - pythian
+    ports:
+      - 8000:8000
+    environment:
+      - MONGODB_HOST=mongo
+      - API_KEY=MjEzODEw
+  mongo:
+    image: "zfllj/mymongo:0.0.1"
+    networks:
+      - pythian
