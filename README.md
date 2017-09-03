@@ -1,8 +1,14 @@
 # pyapi
 docker-compose service using python API and MongoDB
 
-Instructions:
-Configure environment variables in 'docker-compose.yml'.
+**Instructions:**
+Clone pyapi e.g. `git clone https://github.com/lfzamora81/pyapi.git`
+
+Run `docker-compose up -d` from cloned repository.
+
+**Configure to taste:**
+
+Configure environment variables in `docker-compose.yml`.
 
 It is advised to use the newest available container versions of zfllj/smplrst and zfllj/mymongo to ensure smooth operation but can be modified as you see fit.
 
